@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="chatboat.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <div id="slider">
+            <div id="slider-icons">
+                <i class="fa-solid fa-door-closed" id="close-door" data-tooltip="Close Door"></i>
+                <i class="fa-solid fa-magnifying-glass" id="search" data-tooltip="Search"></i>
+                <i class="fa-brands fa-rocketchat" id="innerchat" data-tooltip="New"></i>
+            </div>
+
+            <div id="explore">
+                <div id="upgrades">
+                    <div id="clone">
+                        <i class="fa-solid fa-clover"></i>
+                        <p>ChatNova</p>
+                    </div>
+                    <button id="upgrade" >Upgrade</button>
+                    
+                </div>
+                <div id="explore-nova">
+                    <i class="fa-brands fa-wpexplorer" id="more" ></i>
+                    <p>Explore ChatNova</p>
+                </div>
+            </div>
+
+            <div id="chat-history">history</div>
+
+            <button id="show-guidelines">Guidelines</button>
+
+        </div>
+
+        
+        
+        <div id="main-content">
+            <header id="navbar">
+                <div id="icons">
+                    <i class="fa-solid fa-door-open" id="open-door" data-tooltip="Close Door"></i>
+                    <i class="fa-brands fa-rocketchat" id="chat" data-tooltip="New Chat"></i>
+                    <img src="https://threedio-prod-var-cdn.icons8.com/tv/preview_sets/previews/MbS0Ob1FfwR_-Mwf.webp" class="chatboatpic">
+                </div>
+                <div id="profile-pic">
+                    <img src="https://www.pngall.com/wp-content/uploads/5/User-Profile-PNG-Image.png" class="user-pic">
+                </div>
+            </header>
+    
+            <div class="content">
+                <h2><span>ChatNova </span>your Persional Assist!</h2>
+            
+                <div id="chatContainer"></div>
+                
+                <div class="chat-footer">
+                    <div class="input-container">
+                        <input type="text" id="userInput" placeholder="Ask something...">
+                        <i class="fa-solid fa-microphone" id="voiceButton" data-tooltip="Voice"></i>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div id="wraper">
+        <div id="hidden">
+            <div id="head1">
+                <input type="text" id="newinput" placeholder="Search for chat...">
+                <i class="fa-solid fa-xmark" id="cancel" ></i>
+            </div>
+            <div id="middle">
+                <i class="fa-brands fa-rocketchat" id="chatbox"><p>New Chat</p></i>
+                <div id="chat-history"><i class="fa-regular fa-comments"></i></div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="guidelines">
+        <button id="close-guidelines">×</button>
+        <h2>ChatNova Guidelines</h2>
+        <ul>
+          <li>Be clear and specific with your questions.</li>
+          <li>Avoid sharing personal or sensitive information.</li>
+          <li>ChatNova supports topics like coding, English practice, general knowledge, and productivity tips.</li>
+          <li>If you need help with homework or projects, explain what you’ve tried.</li>
+          <li>For best results, keep one topic per question.</li>
+          <li>Be respectful and kind during the conversation.</li>
+        </ul>
+      </div>
+
+    
+   
+
+
+
+
+
+
+
+
+
+
+    <div id="subscription">
+        <div id="cut">
+            <i class="fa-solid fa-xmark" id="close" ></i>
+        </div>
+        <div id="plans">
+            
+              <!-- Plans -->
+              <div class="plans">
+                <!-- Free Plan -->
+                <div class="plan-card personal active">
+                  <h2>Free</h2>
+                  <div class="price">$0 <span style="font-size:14px;">/month</span></div>
+                  <p>Explore how AI can help you with everyday tasks.</p>
+                  <button>Your current plan</button>
+                  <ul>
+                    <li>✔ Access to cNova-v.o1 mini</li>
+                    <li>✔ Standard voice mode</li>
+                    <li>✔ Web browsing (limited)</li>
+                  </ul>
+                </div>
+            
+                <!-- Plus Plan -->
+                <div class="plan-card personal relative active">
+                  <span class="popular-badge">POPULAR</span>
+                  <h2>Plus</h2>
+                  <div class="price">$5 <span style="font-size:14px;">/month</span></div>
+                  <p>Level up productivity and creativity with expanded access.</p>
+                  <button>Get Plus</button>
+                  <ul>
+                    <li>✔ Everything in Free</li>
+                    <li>✔ Advanced voice mode</li>
+                    <li>✔ cNova-v.o1 (standard limits)</li>
+                  </ul>
+                </div>
+            
+                <!-- Pro Plan -->
+                <div class="plan-card personal active">
+                  <h2>Pro</h2>
+                  <div class="price">$10 <span style="font-size:14px;">/month</span></div>
+                  <p>Get the best of ChatNova with the highest level of access.</p>
+                  <button>Get Pro</button>
+                  <ul>
+                    <li>✔ Everything in Plus</li>
+                    <li>✔ Unlimited cNova-v.o1</li>
+                    <li>✔ Extended research tools</li>
+                  </ul>
+                </div>
+            
+                <!-- Team Plan (Only visible in Business) -->
+                <div class="plan-card business">
+                  <h2>Team</h2>
+                  <div class="price">$7 <span style="font-size:14px;">/month</span></div>
+                  <p>Supercharge your team’s work with a secure, collaborative workspace.</p>
+                  <button>Get Team</button>
+                  <ul>
+                    <li>✔ Everything in Plus, higher message limits</li>
+                    <li>✔ Customize workflows, file uploads</li>
+                    <li>✔ Persistent memory, ChatNova access</li>
+                  </ul>
+                </div>
+              </div>
+        </div>
+    </div>
+    <script src="chatboat.js"></script>
+</body>
+</html>
